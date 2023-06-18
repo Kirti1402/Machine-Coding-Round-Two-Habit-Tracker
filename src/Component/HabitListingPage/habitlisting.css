@@ -1,0 +1,73 @@
+.card-name {
+    cursor: pointer;
+  margin: 5rem;
+  display: flex;
+  gap: 5rem;
+}
+
+.name {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  background-color: #579BB1;
+  color: white;
+  margin-bottom: 16px;
+  width: 10rem;
+  font-size: 20px;
+  font-weight: 600;
+}
+.name:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.habit-card-detail {
+  position: absolute;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  background-color: whitesmoke;
+  margin-bottom: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.habit-card-detail:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title-value {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-habit-button {
+  background-color: #ff6b6b;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.add-habit-button:hover {
+  background-color: #d4be63;
+}
+
+.link{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.link:hover{
+    color: #d4be63;
+}

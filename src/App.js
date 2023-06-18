@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { HabitListingPage } from './Component/HabitListingPage/HabitListing';
+import {Routes,Route} from "react-router-dom"
+import HabitArchive from './Component/HabitArchivePage/HabitArchive';
+import { ToastContainer, toast } from 'react-toastify';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <ToastContainer />
+     <Routes>
+      <Route path="/" element={ <HabitListingPage/>}/>
+      <Route path='/archive' element={<HabitArchive/>}/>
+     </Routes>
     </div>
   );
 }
